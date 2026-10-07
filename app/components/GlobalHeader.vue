@@ -65,7 +65,7 @@ header.global-header.flex-center(
                   .banner-bg
                   NuxtLink.plain.name(to='/profile')
                     img.avatar(
-                      :src='user.profile.avatar.fileUrl',
+                      :src='user.profile?.avatar?.fileUrl || DEFAULT_AVATAR',
                       alt='',
                       style='background-color: #ddd'
                     )
